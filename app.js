@@ -56,3 +56,9 @@ ScrollReveal().reveal(".gallery img", {
   origin: "bottom",
   interval: 100,
 });
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
